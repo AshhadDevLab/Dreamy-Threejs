@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  background-color: #11151c;
+}
+
+a {
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 0.75rem;
+}
+
+a:hover {
+  filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.9));
+}
+
+#canvas {
+  height: 100%;
+  width: 100%;
+  z-index: 0;
+}
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  top: 10%;
+  height: 80%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  z-index: 1;
+}
+
+.title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.socials svg {
+  margin: 0 5px;
+  transition: all 0.5s ease-in-out;
+  transform: scale(1);
+}
+
+.socials svg:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0px 0px 5px rgba(255, 255, 255, 1));
+}
